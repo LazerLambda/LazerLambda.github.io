@@ -1,1 +1,180 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio/Business Card</title>
+    <style>
+        /* Minimalist CSS for a clean, academic look */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f7f7f7; /* Light background */
+            color: #333; /* Dark text */
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px; /* Increased width for new content */
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Align content left for readability */
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 5px;
+            font-size: 2.2em;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 400;
+            color: #555;
+            margin-top: 0;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #0056b3;
+        }
+        
+        /* Style for item lists (Work, Education, Pubs, Projects) */
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .item-list li {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .item-list li:last-child {
+            border-bottom: none;
+        }
+
+        .role, .title, .degree {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .location-date {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .description {
+            margin-top: 5px;
+            line-height: 1.4;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>X Y (M.Sc.)</h1>
+        <h2>ML Engineer with a focus on NLP and alot of curiosity.</h2></h2>
+
+        <hr>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com" target="_blank">Email</a> |
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+                <a href="https://yourportfolio.com" target="_blank">Google Scholar</a>
+            </div>
+        </div>
+
+        <h3><span style="color: #007bff;">&#9432;</span> About</h3>
+        <p class="description">
+            I am an AI/ML practioner developing and deploying scalable models in cloud environments. My work focuses on **Natural Language Processing (NLP)**, specifically leveraging attention mechanisms for improving conversational AI performance. I'm passionate about reproducible research and open-source contributions.
+        </p>
+
+        <h3><span style="color: #007bff;">&#9881;</span> Work Experience</h3>
+        <ul class="item-list">
+            <li>
+                <span class="role">AI Engineer</span>, BLACKFIELD AI AG
+                <p class="location-date">Bremen | 2025 – Present</p>
+                <p class="description">Building customized solutions for industries.</p>
+            </li>
+            <li>
+                <span class="role">Data Scientist</span>, Prognos AG
+                <p class="location-date">Munich | 2024 – 2025</p>
+                <p class="description">Applied SOTA-NLP-methods for gaining insights for the public sector and institions.</p>
+            </li>
+            <li>
+                <span class="role">Frontend Engineer (Working Student)</span>, W&W Interaction Solutions
+                <p class="location-date">Munich | 2022 – 2022</p>
+                <p class="description">Contributed to the Adam Riese App.</p>
+            </li>
+        </ul>
+
+
+        <h3><span style="color: #007bff;">&#127891;</span> Education</h3>
+        <ul class="item-list">
+            <li>
+                <span class="degree">M.Sc. in Statistics and Data Science</span>
+                <p class="location-date">Ludwig-Maximilian University (LMU) | 2021-2024</p>
+                <p class="description"></p>
+            </li>
+            <li>
+                <span class="degree">B.A. in Mathematics</span>
+                <p class="location-date">Stanford University | 2017</p>
+            </li>
+        </ul>
+
+
+        <h3><span style="color: #007bff;">&#128218;</span> Publications</h3>
+        <ul class="item-list">
+            <li>
+                <span class="title">"A Novel Attention Mechanism for Large Language Models"</span>
+                <p class="location-date"><em>Journal of AI Research</em>, Vol. 15(3), pp. 100-115 | DOI: 10.xxxx/xxxx</p>
+                <p class="description"><a href="link-to-paper" target="_blank" style="color: #007bff;">[Link to Paper]</a> Co-authored with Dr. J. Smith. Focused on improving context window processing.</p>
+            </li>
+            <li>
+                <span class="title">"Evaluating the Ethics of Algorithmic Trading"</span>
+                <p class="location-date"><em>Proc. of the 2020 Intl. Conference on Financial Tech</em> | Presented at London, UK</p>
+            </li>
+        </ul>
+
+
+        <h3><span style="color: #007bff;">&#128640;</span> Projects</h3>
+        <ul class="item-list">
+            <li>
+                <span class="title">Open-Source Data Visualization Library (Project Nebula)</span>
+                <p class="location-date">Personal Project | 2023</p>
+                <p class="description">A Python library built with D3.js for rendering complex network graphs, used by over 50 GitHub repositories. <a href="link-to-github" target="_blank" style="color: #007bff;">[GitHub]</a></p>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
