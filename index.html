@@ -25,11 +25,33 @@
             text-align: left; /* Align content left for readability */
         }
 
+        /* New styles for the header with image */
+        .header-content {
+            display: flex; /* Allows image and text to be side-by-side */
+            align-items: center; /* Vertically centers items in the flex container */
+            justify-content: center; /* Horizontally centers the whole block */
+            margin-bottom: 30px; /* Space below the header block */
+            text-align: left; /* Ensures text alignment remains left within its own box */
+        }
+
+        .profile-picture {
+            width: 100px; /* Size of the profile picture */
+            height: 100px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-right: 20px; /* Space between image and text */
+            flex-shrink: 0; /* Prevents image from shrinking on smaller screens */
+        }
+
+        .header-text {
+            /* No specific styles needed here, children will align themselves */
+        }
+
         h1 {
             color: #007bff;
             margin-bottom: 5px;
             font-size: 2.2em;
-            text-align: center;
+            text-align: left; /* Align to the left within the header-text div */
         }
 
         h2 {
@@ -37,8 +59,8 @@
             color: #555;
             margin-top: 0;
             font-size: 1.2em;
-            text-align: center;
-            margin-bottom: 30px;
+            text-align: left; /* Align to the left within the header-text div */
+            margin-bottom: 0; /* Adjusted for tighter spacing within the header */
         }
 
         h3 {
@@ -102,8 +124,13 @@
 <body>
 
     <div class="container">
-        <h1>Philipp Koch</h1>
-        <h2>ML Engineer with a focus on NLP and a passion for learning.</h2></h2>
+        <div class="header-content">
+            <img src="https://avatars.githubusercontent.com/u/49939753?v=4" alt="Philipp Koch Profile Picture" class="profile-picture"> 
+            <div class="header-text">
+                <h1>Philipp Koch</h1>
+                <h2>ML Engineer with a focus on NLP and a passion for learning.</h2>
+            </div>
+        </div>
 
         <hr>
 
@@ -124,19 +151,13 @@
             <br>
             In my free time, I like to stay up to date with AI research, build useful open-source libraries, and go cycling or running.
         </p>
-<!-- 
-        <h3><span>&#9881;</span> Work Experience</h3>
-        <p class="description">
-        </p> -->
-
-
         <h3><span>&#127891;</span> Education</h3>
         <p class="description">
             I studied in beautiful Munich at LMU, where I earned a Bachelor’s degree in Computer Science and Statistics and a Master’s degree in Statistics and Data Science. During my studies, I spent a semester abroad both in my bachelor’s and master’s programs: at NTU Singapore and Tsinghua University Beijing, respectively.
             <br>
-            From early on, I focused on machine learning, diving into NLP well before the 2018 boom. While I’ve always loved coding, I also enjoy the mathematical challenges behind ML, which led me to place a stronger emphasis on statistics during my master’s.
+            From early on, I focused on machine learning, diving into NLP well before the recent boom. While I’ve always loved coding, I also enjoy the mathematical challenges behind ML, which led me to place a stronger emphasis on statistics during my master’s.
             <br>
-            During that time, I also founded the <a href="https://www.munich-nlp.com" target="_blank">Munich🥨NLP Meetup</a>, which I still co-organize today. At the end of my master’s, I received an award for the institute’s best statistical consulting project (2023), which was later <a href="https://aclanthology.org/2023.alp-1.12/ target="_blank"">published</a>.
+            During that time, I also founded the <a href="https://www.munich-nlp.com" target="_blank">Munich🥨NLP</a> Meetup, which I still co-organize today. At the end of my master’s, I received an award for the institute’s best statistical consulting project (2023), which was later <a href="https://aclanthology.org/2023.alp-1.12/ target="_blank"">published</a>.
         </p>
 
 
